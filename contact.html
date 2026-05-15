@@ -1,160 +1,205 @@
-<!--Shadrack Lemetei-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
-    <style>
-        body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: rgb(249, 247, 247);
-    }
-
-    .contact-container {
-        max-width: 1100px;
-        margin: 50px auto;
-        padding: 20px;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .contact-wrapper {
-        display: grid;u
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-
-    /* Contact Info Section */
-    .contact-info {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .contact-info h2 {
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    .contact-info p {
-        margin: 10px 0;
-        color: #555;
-    }
-
-
-    /* Contact Form */
-    .contact-form {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .contact-form h2 {
-        margin-bottom: 20px;
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-    }
-
-    .form-group textarea {
-        resize: none;
-        height: 120px;
-    }
-
-    .btn-submit {
-        background: #007BFF;
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: 0.3s ease;
-    }
-
-    .btn-submit:hover {
-        background: #0056b3;
-    }
-
-    /* Responsive */
-    @media(max-width: 768px) {
-        .contact-wrapper {
-            grid-template-columns: 1fr;
-        }
-    }
-    </style>
-     <nav>
-            <a class="nav" href="index.html">Home</a>
-            <a class="nav" href="about.html">About</a>
-            <a class="nav" href="projects.html">Project</a>
-               <a class="contact-button" href="contact.html">Contact</a>
-     </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with EcoCycle Solutions for waste pickups, partnerships, and sustainability inquiries.">
+  <title>Contact Us | EcoCycle Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="contact-container">
-    <h1>Contact Us</h1>
 
-    <div class="contact-wrapper">
-
-        <!-- Contact Information -->
-        <div class="contact-info">
-            <h2>Our Office</h2>
-            <p><strong>Address:</strong> 456 Business Street, Nairobi, Kenya</p>
-            <p><strong>Phone:</strong> +254 700 000 000</p>
-            <p><strong>Email:</strong> info@ecocyclesolutions.co.ke</p>
-            <p><strong>Business Hours:</strong><br>
-                Monday - Friday: 8:00 AM - 5:00 PM<br>
-                Saturday: 9:00 AM - 2:00 PM<br>
-                Sunday: Closed
-            </p>
-            
-        </div>
-
-        <!-- Contact Form -->
-        <div class="contact-form">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Full Name" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="tel" name="phone" placeholder="Phone Number">
-                </div>
-
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                </div>
-
-                <button type="submit" class="btn-submit">Submit</button>
-            </form>
-        </div>
-
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <img src="logo.png" alt="EcoCycle Solutions Logo">
+      <div class="logo-text">EcoCycle Solutions<span>Recycling for a better world</span></div>
     </div>
-</div>
-  
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active btn-nav">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Have a question or ready to start recycling? We'd love to hear from you.</p>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section">
+  <div class="section-header">
+    <span class="section-label">Get In Touch</span>
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-subtitle">Whether it's a pickup request, partnership inquiry, or general question — our team is ready to help.</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- Info Panel -->
+    <div class="contact-info">
+      <h3>Our Office</h3>
+
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <div>
+          <strong>Address</strong>
+          <p>456 Business Street, Nairobi, Kenya</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <span class="info-icon">📞</span>
+        <div>
+          <strong>Phone</strong>
+          <p>+254 700 000 000</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <span class="info-icon">✉️</span>
+        <div>
+          <strong>Email</strong>
+          <p>info@ecocyclesolutions.co.ke</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <span class="info-icon">🕐</span>
+        <div>
+          <strong>Business Hours</strong>
+          <p>Mon – Fri: 8:00 AM – 5:00 PM<br>Saturday: 9:00 AM – 2:00 PM<br>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Panel -->
+    <div class="contact-form-wrap">
+      <h3>Send Us a Message</h3>
+      <form id="contact-form" action="#" method="POST" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. John Kamau" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+254 7XX XXX XXX">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">-- Select a service --</option>
+              <option value="plastic">Plastic Recycling</option>
+              <option value="ewaste">E-Waste Recycling</option>
+              <option value="paper">Paper Recycling</option>
+              <option value="collection">Waste Collection</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-green" style="width:100%; justify-content:center;">
+          Send Message &rarr;
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo-text">EcoCycle Solutions<span>Recycling for a better world</span></div>
+      <p>We are committed to building a sustainable future through innovative recycling solutions and community partnerships across Kenya.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="social-link" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" class="social-link" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">456 Business St, Nairobi</a></li>
+        <li><a href="tel:+254700000000">+254 700 000 000</a></li>
+        <li><a href="mailto:info@ecocyclesolutions.co.ke">info@ecocyclesolutions.co.ke</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 EcoCycle Solutions. All Rights Reserved. Built with 💚 for the planet.</p>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main-nav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    nav.classList.toggle('open');
+    document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      nav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Form submit feedback
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    btn.textContent = '✅ Message Sent!';
+    btn.style.background = 'var(--green-dark)';
+    setTimeout(() => {
+      btn.innerHTML = 'Send Message &rarr;';
+      btn.style.background = '';
+      this.reset();
+    }, 3000);
+  });
+</script>
 </body>
 </html>

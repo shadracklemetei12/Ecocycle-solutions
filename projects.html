@@ -1,54 +1,141 @@
-<!--Peter Mwangangi-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore EcoCycle Solutions' community and corporate recycling projects making a real environmental difference in Kenya.">
+  <title>Projects | EcoCycle Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-     <nav>
-            <a class="nav" href="index.html">Home</a>
-            <a class="nav" href="about.html">About</a>
-            <a class="nav" href="projects.html">Project</a>
-               <a class="contact-button" href="contact.html">Contact</a>
-     </nav>
-     </header>
-     <main class="projects-main">
-                <section class="projects" id="projects">
-                <h2 id="projects-title">Projects</h2>
-                <div class="project-container">
-                    <div class="project-card">
-                        <h3>School Recycling Program</h3>
-                        <div class="project-content">
-                        <img class="project-image" src="School Recycling Program Image.png" alt="Project 1">
-                        <p>This project focuses on implementing a comprehensive recycling program in schools to reduce waste and promote environmental awareness.we were able to install recycling bins in 10 schools.Reduced waste by 40%.</p>
-                    </div>
-                    </div>
 
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <img src="logo.png" alt="EcoCycle Solutions Logo">
+      <div class="logo-text">EcoCycle Solutions<span>Recycling for a better world</span></div>
+    </div>
 
-                    <div class="project-card">
-                        <h3>Corporate Waste Audit</h3>
-                        <div class="project-content">
-                        <img class="project-image" src="Corporate Waste Audit Image.png" alt="Project 2">
-                        <p>This project involves conducting a comprehensive audit of corporate waste management practices to identify inefficiencies and opportunities for improvement. We helped companies reduce their waste output by 30% through better sorting and recycling protocols.</p>
-                    </div>
-                    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
 
-                    <div class="project-card">
-                        <h3> Community Clean-Up Drive</h3>
-                        <div class="project-content"></div>
-                        <img class="project-image" src="Community Clean-Up Drive Image.png" alt="Project 3">
-                        <p>This project involved organizing community clean-up drives in local neighborhoods to remove litter and promote environmental stewardship. We successfully cleaned up over 500 acres of public land and engaged more than 200 volunteers.Collected 700 kgs of waste from public parks.</p>
-                    </div>
-                    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-            </section>
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <h1>Our Projects</h1>
+  <p>Real initiatives driving real environmental change across Kenya.</p>
+</section>
 
-     </main>
-        
+<!-- ===== PROJECTS ===== -->
+<section class="projects-section">
+  <div class="section-header">
+    <span class="section-label">Case Studies</span>
+    <h2 class="section-title">Impact in Action</h2>
+    <p class="section-subtitle">From schools to corporations, here are some of the recycling projects we've successfully delivered.</p>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-img-wrap">
+        <img src="School Recycling Program Image.png" alt="School Recycling Program">
+      </div>
+      <div class="project-body">
+        <span class="project-tag">Education</span>
+        <h3>School Recycling Program</h3>
+        <p>Implemented a comprehensive recycling program across 10 schools, installing dedicated recycling bins and training students on waste sorting. Achieved a 40% reduction in school waste going to landfills.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img-wrap">
+        <img src="Corporate Waste Audit Image.png" alt="Corporate Waste Audit">
+      </div>
+      <div class="project-body">
+        <span class="project-tag">Corporate</span>
+        <h3>Corporate Waste Audit</h3>
+        <p>Conducted a comprehensive audit of corporate waste management practices for major businesses, identifying inefficiencies. Helped companies reduce their waste output by 30% through improved sorting and recycling protocols.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img-wrap">
+        <img src="Community Clean-Up Drive Image.png" alt="Community Clean-Up Drive">
+      </div>
+      <div class="project-body">
+        <span class="project-tag">Community</span>
+        <h3>Community Clean-Up Drive</h3>
+        <p>Organized community clean-up drives across local neighborhoods, engaging over 200 volunteers. Successfully cleaned 500+ acres of public land and collected 700 kgs of waste from parks and public spaces.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo-text">EcoCycle Solutions<span>Recycling for a better world</span></div>
+      <p>We are committed to building a sustainable future through innovative recycling solutions and community partnerships across Kenya.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="social-link" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" class="social-link" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">456 Business St, Nairobi</a></li>
+        <li><a href="tel:+254700000000">+254 700 000 000</a></li>
+        <li><a href="mailto:info@ecocyclesolutions.co.ke">info@ecocyclesolutions.co.ke</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 EcoCycle Solutions. All Rights Reserved. Built with 💚 for the planet.</p>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main-nav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    nav.classList.toggle('open');
+    document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      nav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
 </body>
 </html>
